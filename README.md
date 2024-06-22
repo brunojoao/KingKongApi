@@ -1,6 +1,14 @@
-Temporary instructions
+Setup Instructions
+1. Migrations
 
-1 - If migrations not work in first time, restart container and try again
+If migrations do not work on the first attempt, follow these steps:
 
-8001 - Kong Json api
-8002 - GUI interface
+    Restart the container and try running migrations again.
+
+2. Ports and Services
+
+    8001: Kong JSON API (Admin API)
+        Use this port to interact with the Kong Gateway through its JSON API. Example: http://localhost:8001/
+
+    8002: GUI Interface (Konga or other GUI)
+        Access the graphical user interface for managing Kong and its configurations. Example: http://localhost:8002/
